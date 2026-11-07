@@ -9,7 +9,7 @@ Decision support system untuk kajian eksplorasi Ramba Joring, OlympiAR 2026. Sit
 - Telaah C-N, S-1, dan target arsip; sensitivitas radius serta multiplicity lokasi.
 - Terrain DEMNAS lokal 2,2 × 2,2 km dan regional 20 × 20 km. Kamera tanpa rotasi otomatis; drag untuk putar atau geser, scroll untuk zoom, dan tombol Reset.
 - Data assay, collar, sampel permukaan, serta screening NAG pada RJDH012.
-- Metodologi, gambar pendukung Laporan Devilline, dan profil tim. Foto Ima sementara memakai placeholder.
+- Metodologi, gambar pendukung Laporan Devilline, dan profil tim. Foto ketiga anggota menggunakan aset yang diberikan tim.
 
 ## Pengembangan
 
@@ -36,4 +36,4 @@ NAG hanya tersedia pada RJDH012. Rasio AuCN/Au bukan recovery. Stasiun dan opsi 
 
 ## Aset dan pustaka
 
-Layout diadaptasi dari referensi Cirata yang disediakan pemilik proyek. Logo milik masing-masing institusi/penyelenggara. Foto anggota dipakai dari aset referensi yang diberikan. Gambar terrain berasal dari DEMNAS BIG; gambar kajian berasal dari Laporan Devilline. Lihat `THIRD_PARTY.md` untuk pustaka.
+Layout diadaptasi dari referensi Cirata yang disediakan pemilik proyek. Logo milik masing-masing institusi/penyelenggara. Foto anggota dipakai dari aset referensi yang diberikan. Citra satelit beranda menggunakan maps1 yang diberikan tim (Google Maps; Airbus, CNES / Airbus, Maxar Technologies). Gambar terrain berasal dari DEMNAS BIG; gambar kajian berasal dari Laporan Devilline. Lihat `THIRD_PARTY.md` untuk pustaka.

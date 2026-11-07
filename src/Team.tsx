@@ -13,6 +13,7 @@ interface TeamMember {
   university: string;
   bio: string;
   image: string;
+  imageClassName?: string;
   badge: string;
 }
 
@@ -34,7 +35,8 @@ const teamMembers: TeamMember[] = [
     "faculty": "OlympiAR 2026",
     "university": "Institut Teknologi Bandung",
     "bio": "Tim peserta OlympiAR 2026 dalam kajian integrasi geologi, geokimia, dan evaluasi potensi pembentukan asam untuk perencanaan eksplorasi emas Ramba Joring.",
-    "image": "./assets/ima-placeholder.svg",
+    "image": "./assets/pp_ima.png",
+    "imageClassName": "pt-14",
     "badge": "ITB • OlympiAR 2026"
   },
   {
@@ -87,7 +89,7 @@ export default function TeamPage() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover object-top"
+                  className={`w-full h-full object-cover object-top ${member.imageClassName ?? ''}`}
                 />
                 <div className="absolute top-4 right-4 max-w-[88%] px-3 py-1 rounded-full bg-white/95 border border-gray-200 text-[11px] font-mono font-semibold text-emerald-800 shadow-sm truncate">
                   {member.badge}

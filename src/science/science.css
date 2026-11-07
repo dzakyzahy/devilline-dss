@@ -23,3 +23,11 @@
 @media(min-width:1024px){.science-nav{margin-left:390px}.workspace-page .workspace{grid-template-columns:390px minmax(0,1fr);gap:0}.workspace-page .workspace>.sidebar{margin-top:-51px;position:sticky;top:112px;min-height:calc(100vh - 112px);max-height:calc(100vh - 112px);overflow-y:auto;border-radius:0;border-width:0 1px 0 0;box-shadow:none;padding:20px}.workspace-page .content-stack{min-width:0}}
 @media(min-width:1280px){.science-nav{margin-left:410px}.workspace-page .workspace{grid-template-columns:410px minmax(0,1fr)}}
 @media(max-width:1023px){.workspace-page .wrap{padding:0}.workspace-page .content-stack{padding:18px 12px}.science .parameter-toggle{display:block;width:100%;text-align:left;border:0;border-radius:0;border-bottom:1px solid #e5e7eb;background:white;padding:14px 20px;font-size:12px;font-weight:700;color:#047857}.workspace-page:not(.parameters-open) .sidebar{display:none}.workspace-page .workspace{gap:0}.workspace-page .sidebar{border-radius:0;border-width:0 0 1px;padding:20px}.workspace-page .toolbar{grid-column:1/-1}.workspace-page .page-title{position:absolute}}
+
+/* Keep chart and table overflow inside their panel, including narrow desktop columns. */
+.workspace-page .content-stack{grid-template-columns:minmax(0,1fr)}
+.workspace-page .content-stack>*{min-width:0;max-width:100%}
+.science .chart-scroll{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.science .chart-scroll:focus-visible{outline:2px solid #047857;outline-offset:-2px}
+.science #nag-chart{min-width:720px}
+.science .chart-scroll-hint{margin:0;padding:8px 22px 12px;font-size:11px;color:#607278}

@@ -16,15 +16,15 @@ export default function LandingPage() {
           Layer 3 (z-20): Invisible Compartment Aligned Top-Right on Laptop (2-Line Title & 5-Line Description) + Dedicated Centered Mobile Layout
       */}
       <section className="relative isolate w-full min-h-0 lg:min-h-[85vh] flex items-start justify-center lg:justify-end overflow-hidden bg-white border-b border-gray-200">
-        {/* LAYER 1 (BOTTOM): Crisp High-Res Waduk Cirata Map Background */}
+        {/* LAYER 1: Satellite context supplied for the study area. */}
         <div
-          className="absolute inset-0 z-0 bg-cover bg-[position:18%_center] lg:bg-left bg-no-repeat"
+          className="hero-map absolute inset-0 z-0 bg-cover bg-[position:18%_center] lg:bg-left bg-no-repeat"
           style={{
-            backgroundImage: "url('./assets/terrain-hero.jpg')",
+            backgroundImage: "url('./assets/maps1.png')",
           }}
         />
-        {/* Smooth Editorial Gradient Overlay (Keeps Waduk Cirata on Left Clear & Visible, Fades Smoothly on Right for Text) */}
-        <div className="absolute inset-0 z-0 bg-white/50 sm:bg-white/42 lg:bg-transparent lg:bg-[linear-gradient(to_right,rgba(255,255,255,0)_0%,rgba(255,255,255,0.02)_46%,rgba(255,255,255,0.78)_68%,rgba(255,255,255,0.95)_100%)]" />
+        {/* Fade the map behind the introduction while keeping the left side visible. */}
+        <div className="absolute inset-0 z-0 bg-white/75 sm:bg-white/70 lg:bg-transparent lg:bg-[linear-gradient(to_right,rgba(255,255,255,0)_0%,rgba(255,255,255,0.08)_28%,rgba(255,255,255,0.88)_53%,rgba(255,255,255,0.98)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 h-16 z-0 bg-gradient-to-t from-white to-transparent" />
 
         {/* LAYER 2 (MIDDLE): Full-Canvas Snaking Ribbons */}
@@ -210,6 +210,9 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
+        <p className="absolute bottom-2 left-4 right-4 z-20 text-[9px] sm:text-[10px] text-gray-700 leading-snug">
+          <span className="bg-white/90 px-2 py-1 box-decoration-clone">Google Maps · Citra © 2026 Airbus, CNES / Airbus, Maxar Technologies</span>
+        </p>
       </section>
 
       <main tabIndex={-1} className="flex-1 max-w-7xl w-full mx-auto px-6 py-16 space-y-16">
@@ -239,7 +242,16 @@ export default function LandingPage() {
           ].map(([label,title,body,note])=><div key={label} className="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col justify-between"><div><span className="text-xs font-mono font-bold text-emerald-700 block mb-2">MODUL {label}</span><h4 className="text-lg font-bold text-gray-900 mb-2">{title}</h4><p className="text-gray-600 text-sm leading-relaxed">{body}</p></div><div className="mt-5 pt-3 border-t border-gray-100 text-xs text-emerald-700 font-mono font-semibold">{note}</div></div>)}
         </section>
       </main>
-      <footer className="py-8 px-6 text-gray-600 text-xs border-t border-gray-200 bg-white"><div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4"><div className="flex flex-wrap items-center gap-4"><img src="./assets/itb.png" alt="ITB" className="h-8 w-auto object-contain"/><img src="./assets/olympiar.png" alt="OlympiAR 2026" className="h-8 w-auto object-contain"/><img src="./assets/agincourt.png" alt="Agincourt Resources" className="h-8 w-auto object-contain"/><span className="font-bold text-gray-800">TIM DEVILLINE · ITB</span></div><p className="text-gray-500">© 2026 Devilline Decision Support System · OlympiAR 2026.</p></div></footer>
+      <footer className="py-8 px-6 text-gray-600 text-xs border-t border-gray-200 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center gap-4"><img src="./assets/itb.png" alt="ITB" className="h-8 w-auto object-contain"/><img src="./assets/olympiar.png" alt="OlympiAR 2026" className="h-8 w-auto object-contain"/><img src="./assets/agincourt.png" alt="Agincourt Resources" className="h-8 w-auto object-contain"/><span className="font-bold text-gray-800">TIM DEVILLINE · ITB</span></div>
+          <p className="text-gray-500">© 2026 Devilline Decision Support System · OlympiAR 2026.</p>
+        </div>
+        <section aria-labelledby="usage-disclaimer" className="max-w-7xl mx-auto mt-6 pt-6 border-t border-gray-200 leading-relaxed">
+          <h2 id="usage-disclaimer" className="font-semibold text-gray-800 mb-2">Batas penggunaan</h2>
+          <p>Website DSS dan data yang disajikan hanya untuk keperluan OlympiAR 2026 serta pengujian dalam lingkungan yang telah memperoleh izin. Penggunaan, pengunduhan, dan penyebarluasan di luar lingkup tersebut memerlukan persetujuan pemilik data dan pihak yang berwenang. Hasil analisis dan visualisasi merupakan bahan kajian kompetisi dan tidak menjadi dasar tunggal keputusan operasional di lapangan.</p>
+        </section>
+      </footer>
     </div>
   );
 }

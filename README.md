@@ -10,6 +10,7 @@ Decision support system untuk kajian eksplorasi Ramba Joring, OlympiAR 2026. Sit
 - Terrain DEMNAS lokal 2,2 × 2,2 km dan regional 20 × 20 km. Kamera tanpa rotasi otomatis; drag untuk putar atau geser, scroll untuk zoom, dan tombol Reset.
 - Data assay, collar, sampel permukaan, serta screening NAG pada RJDH012.
 - Metodologi, gambar pendukung Laporan Devilline, dan profil tim. Foto ketiga anggota menggunakan aset yang diberikan tim.
+- Galeri beranda berisi peta wilayah dan tiga gambar laporan, berganti setiap 10 detik dengan transisi 1,5 detik. Tombol sebelumnya/berikutnya, pilihan gambar, jeda/putar, dan tautan gambar penuh tersedia. Pemilihan manual menjeda galeri; preferensi pengurangan gerak mematikan putar otomatis saat dibuka.
 
 ## Pengembangan
 

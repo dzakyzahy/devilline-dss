@@ -3,6 +3,7 @@
 import React from 'react';
 import {Link} from './Link';
 import { Header } from './Header';
+import HeroSlideshow from './HeroSlideshow';
 import { ArrowRight } from 'lucide-react';
 
 export default function LandingPage() {
@@ -11,19 +12,13 @@ export default function LandingPage() {
       <Header />
 
       {/* HERO SECTION:
-          Layer 1 (z-0): Plant Background Image + White Right-Side Fade
-          Layer 2 (z-10): Animated Colorful Snaking Ribbons (Right Text Area + Left/Upper Plant Area)
+          Layer 1 (z-0): Map and Report Slideshow + White Right-Side Fade
+          Layer 2 (z-10): Animated Colorful Snaking Ribbons
           Layer 3 (z-20): Invisible Compartment Aligned Top-Right on Laptop (2-Line Title & 5-Line Description) + Dedicated Centered Mobile Layout
       */}
       <section className="relative isolate w-full min-h-0 lg:min-h-[85vh] flex items-start justify-center lg:justify-end overflow-hidden bg-white border-b border-gray-200">
-        {/* LAYER 1: Satellite context supplied for the study area. */}
-        <div
-          className="hero-map absolute inset-0 z-0 bg-cover bg-[position:18%_center] lg:bg-left bg-no-repeat"
-          style={{
-            backgroundImage: "url('./assets/maps1.png')",
-          }}
-        />
-        {/* Fade the map behind the introduction while keeping the left side visible. */}
+        <HeroSlideshow />
+        {/* Fade the gallery behind the introduction while keeping the left side visible. */}
         <div className="absolute inset-0 z-0 bg-white/75 sm:bg-white/70 lg:bg-transparent lg:bg-[linear-gradient(to_right,rgba(255,255,255,0)_0%,rgba(255,255,255,0.08)_28%,rgba(255,255,255,0.88)_53%,rgba(255,255,255,0.98)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 h-16 z-0 bg-gradient-to-t from-white to-transparent" />
 
@@ -148,7 +143,7 @@ export default function LandingPage() {
         </div>
 
         {/* LAYER 3 (TOP): Centered Responsive Mobile Layout (< lg) | Top-Right Invisible Compartment on Laptop (lg:) */}
-        <div className="relative z-20 w-full max-w-[1480px] mx-auto px-4 sm:px-8 lg:px-14 pt-7 pb-10 sm:pt-9 sm:pb-12 lg:pt-10 lg:pb-16 flex flex-col items-center text-center lg:items-end lg:text-right">
+        <div className="relative z-20 w-full max-w-[1480px] mx-auto px-4 sm:px-8 lg:px-14 pt-7 pb-36 sm:pt-9 sm:pb-36 lg:pt-10 lg:pb-16 flex flex-col items-center text-center lg:items-end lg:text-right">
           {/* Invisible bounding wrapper */}
           <div className="w-full max-w-xl lg:max-w-[780px] flex flex-col items-center lg:items-end space-y-4">
             {/* Competition Pill Badge */}
@@ -210,9 +205,6 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-        <p className="absolute bottom-2 left-4 right-4 z-20 text-[9px] sm:text-[10px] text-gray-700 leading-snug">
-          <span className="bg-white/90 px-2 py-1 box-decoration-clone">Google Maps · Citra © 2026 Airbus, CNES / Airbus, Maxar Technologies</span>
-        </p>
       </section>
 
       <main tabIndex={-1} className="flex-1 max-w-7xl w-full mx-auto px-6 py-16 space-y-16">

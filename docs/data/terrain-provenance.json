@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-07",
+  "inputs": [
+    {
+      "file": "DEMNAS_0617-34_v1.0.tif",
+      "sha256": "d0134cf2e74991489b4ec3d67199cbe9660f1b94734ce421bbcfdb410ccb18bc",
+      "embeddedCRS": null,
+      "effectiveCRS": "EPSG:4326",
+      "sourceBounds": [
+        98.75,
+        1.25,
+        99.0,
+        1.5
+      ],
+      "sourceResolution": [
+        7.500750075007501e-05,
+        7.500750075007501e-05
+      ],
+      "shape": [
+        3333,
+        3333
+      ]
+    },
+    {
+      "file": "DEMNAS_0617-62_v1.0.tif",
+      "sha256": "73fece24b7f2587ad04d291184c5b5ec87eea22c6ad3628be1d345fd718aa9c1",
+      "embeddedCRS": null,
+      "effectiveCRS": "EPSG:4326",
+      "sourceBounds": [
+        98.75,
+        1.5,
+        99.0,
+        1.75
+      ],
+      "sourceResolution": [
+        7.500750075007501e-05,
+        7.500750075007501e-05
+      ],
+      "shape": [
+        3333,
+        3333
+      ]
+    },
+    {
+      "file": "DEMNAS_0717-13_v1.0.tif",
+      "sha256": "27de8e8f9d2aed8611f2c39c0fd542bb6285c4ef3eed981d64ee69f932458917",
+      "embeddedCRS": null,
+      "effectiveCRS": "EPSG:4326",
+      "sourceBounds": [
+        99.0,
+        1.25,
+        99.25,
+        1.5
+      ],
+      "sourceResolution": [
+        7.500750075007501e-05,
+        7.500750075007501e-05
+      ],
+      "shape": [
+        3333,
+        3333
+      ]
+    },
+    {
+      "file": "DEMNAS_0717-41_v1.0.tif",
+      "sha256": "4f5408c1cd6675f863a4d9daa568686e25bb1442f412c88200500b23827fd819",
+      "embeddedCRS": null,
+      "effectiveCRS": "EPSG:4326",
+      "sourceBounds": [
+        99.0,
+        1.5,
+        99.25,
+        1.75
+      ],
+      "sourceResolution": [
+        7.500750075007501e-05,
+        7.500750075007501e-05
+      ],
+      "shape": [
+        3333,
+        3333
+      ]
+    }
+  ],
+  "sourceUrl": "https://tanahair.indonesia.go.id/portal-web/unduh/demnas",
+  "crsAssignmentNote": "Tag CRS pada unduhan kosong. WGS 84 (EPSG:4326) ditetapkan untuk tampilan berdasarkan geotransform lintang/bujur, cakupan indeks tile resmi, dan metadata ImageServer BIG. Kesetaraan datum horizontal berketelitian survei belum diverifikasi.",
+  "crsReference": "https://geoservices.big.go.id/raster/rest/services/DEMNAS/DEM_Indonesia/ImageServer?f=pjson",
+  "tileIndexReference": "https://tanahair.indonesia.go.id/portal-web/demnas.json",
+  "verticalDatum": "EGM2008",
+  "displayCRS": "EPSG:32647",
+  "resampling": "bilinear; pixel centers, north-up raster reversed to ascending Northing for Plotly",
+  "demnasAvailable": true,
+  "collarResidualsM": [
+    22.972705078125045,
+    -23.641981445312467,
+    -25.896468261718724,
+    -8.883253173828109,
+    2.90239697265622,
+    -23.754981445312524,
+    -17.806789062500002,
+    1.5647153320312555,
+    11.801323730468766,
+    22.238791503906214,
+    22.224791503906204,
+    -12.55113232421877,
+    -17.531789062500025,
+    6.892670410156256,
+    8.421567382812555,
+    -17.958726074218703,
+    -15.744676269531283,
+    -13.202901855468781,
+    2.0717153320312036
+  ],
+  "local": {
+    "min": 141.69,
+    "max": 771.0,
+    "spacing": 10.0,
+    "bounds": [
+      506000,
+      167350,
+      508200,
+      169550
+    ],
+    "label": "Cakupan 2.20 × 2.20 km",
+    "validCells": 48400
+  },
+  "regional": {
+    "min": 16.61,
+    "max": 987.52,
+    "spacing": 83.33,
+    "bounds": [
+      497500,
+      158500,
+      517500,
+      178500
+    ],
+    "label": "Cakupan 20.00 × 20.00 km",
+    "validCells": 57600
+  }
+}

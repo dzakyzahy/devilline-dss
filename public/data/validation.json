@@ -1,0 +1,13 @@
+{
+  "seed": 20261107,
+  "checks": 799,
+  "passed": 799,
+  "failures": [],
+  "mappedRecords": 3065,
+  "mappedCells": 23146,
+  "randomStratifiedRecords": 355,
+  "maxTraceErrorM": 0.0007697284555029559,
+  "maxAssayPositionErrorM": 0.0010576750176444923,
+  "terrainSampleCount": 54,
+  "scope": "Data transfer, coordinate/geometry consistency and display checks; not field or laboratory QA/QC."
+}

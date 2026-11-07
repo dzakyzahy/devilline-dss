@@ -69,7 +69,7 @@ export default function TeamPage() {
                 />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 text-center">
                 <h3 className="text-xl font-extrabold text-gray-900">{member.name}</h3>
               </div>
             </div>

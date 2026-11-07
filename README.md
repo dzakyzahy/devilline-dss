@@ -38,3 +38,9 @@ NAG hanya tersedia pada RJDH012. Rasio AuCN/Au bukan recovery. Stasiun dan opsi 
 ## Aset dan pustaka
 
 Layout diadaptasi dari referensi Cirata yang disediakan pemilik proyek. Logo milik masing-masing institusi/penyelenggara. Foto anggota dipakai dari aset referensi yang diberikan. Citra satelit beranda menggunakan maps1 yang diberikan tim (Google Maps; Airbus, CNES / Airbus, Maxar Technologies). Gambar terrain berasal dari DEMNAS BIG; gambar kajian berasal dari Laporan Devilline. Lihat `THIRD_PARTY.md` untuk pustaka.
+
+## Pemeriksaan paket akhir
+
+Paket `DEVILLINE/DEVILLINE` direkonsiliasi lewat `BarisSumber`: 10.016 baris / 386.200 sel primer cocok dengan sumber, 23.146 nilai DSS cocok dengan primer, dan 7.428 padanan assay–logging dihitung ulang. Tabel gabungan mempunyai format koordinat dengan titik majemuk dan 27 AuCN bor kosong meskipun tersedia pada primer; DSS tetap memakai nilai primer yang lengkap. Ringkasan beserta hash input ada di `public/data/cleaned-validation.json`.
+
+Di HP (lebar hingga 767 px), grafik NAG digeser horizontal secara native; tombol +/− dan Reset mengubah zoom horizontal. Interaksi Plotly desktop dipertahankan.

@@ -31,3 +31,5 @@
 .science .chart-scroll:focus-visible{outline:2px solid #047857;outline-offset:-2px}
 .science #nag-chart{min-width:720px}
 .science .chart-scroll-hint{margin:0;padding:8px 22px 12px;font-size:11px;color:#607278}
+
+.science .nag-controls{display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:1px solid #e5e7eb}.science .nag-controls[hidden]{display:none}.science .nag-controls button{min-width:40px;min-height:40px}.science .nag-controls [role=status]{font-size:11px;color:#52686d}.nag-mobile-hint{display:none}@media(max-width:767px){.nag-mobile-hint{display:inline}}

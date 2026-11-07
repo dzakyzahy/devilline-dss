@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-07",
+  "primaryRows": 10016,
+  "primaryCellsCompared": 386200,
+  "webRecords": 3065,
+  "webValuesCompared": 23146,
+  "allAssayOverlapChecks": 7428,
+  "passed": 55,
+  "failures": [],
+  "inputs": [
+    {
+      "file": "01 Validasi/Sembilan tabel primer/DhAlteration.csv",
+      "sha256": "4c850704e5263073272ca590d4fea8d27f2141766368b9d812128ae49c012541"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/DhAlterationOxide.csv",
+      "sha256": "982e5a7e0e962a5685408bcb01966c8c5ea88f3ba3e9b0a8140e973fea8050f6"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/DhAssay.csv",
+      "sha256": "1751d2537f5eb0cb5b28dd4ab24cc98f49d8361e48f1c54fc4734ad12ac159fb"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/DhCollar.csv",
+      "sha256": "c9c529cf416ed79ea44e43f3afbafeffaf2330b9093c63afb8d80b6f9fed094c"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/DhLithology.csv",
+      "sha256": "9038e28c1bb81e3586ff9e9a2d81ca99ac7b5536060fc538f282eab71ff7f594"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/DhMineralisation.csv",
+      "sha256": "54c85b738635954d50ddc0024d2a9d3b5ca9e0a07abb645e5ee31866ac19de05"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/DhSurvey.csv",
+      "sha256": "e10ea9f113bdf619ac8ccdc2d37c1e4e1958613cdc01af0cd1ce4e6adeea7d08"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/PTRockSampling.csv",
+      "sha256": "fd8d8ca538005f71a56bb1e4d4b73e472d913b9a683704f10c6bf089d4e9ab0f"
+    },
+    {
+      "file": "01 Validasi/Sembilan tabel primer/PTSoilSampling.csv",
+      "sha256": "5da78f89620f272a463bcc4c3026db14ec51bd204915474a451db846f600b5cc"
+    }
+  ],
+  "findings": [
+    {
+      "file": "Analisis geokimia Final.csv",
+      "issue": "Format koordinat memuat beberapa pemisah titik; 27 AuCN bor yang tersedia di tabel primer kosong pada tabel gabungan. Nilai pada tabel primer dipertahankan dalam DSS.",
+      "eastingNonNumeric": 2897,
+      "northingNonNumeric": 2887,
+      "missingAvailableDrillAuCN": 27
+    },
+    {
+      "file": "Validasi elevasi terhadap kontur Final.csv",
+      "issue": "Kolom koordinat dan sebagian elevasi memiliki pemisah titik majemuk. Tidak digunakan sebagai pengganti nilai primer atau DEMNAS."
+    }
+  ],
+  "sourcePolicy": "Use reconciled cleaned primary values; do not import malformed numeric text from derived tables. Observations, interpretations and predictions remain separate.",
+  "scope": "Rekonsiliasi transfer nilai dan perhitungan; bukan QA/QC laboratorium atau validasi lapangan."
+}

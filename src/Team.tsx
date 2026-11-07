@@ -7,47 +7,23 @@ import {Link} from './Link';
 
 interface TeamMember {
   name: string;
-  role: string;
-  major: string;
-  faculty: string;
-  university: string;
-  bio: string;
   image: string;
   imageClassName?: string;
-  badge: string;
 }
 
 const teamMembers: TeamMember[] = [
   {
     "name": "Muhammad Ilham Saripul Milah",
-    "role": "Tim Devilline",
-    "major": "Teknik Metalurgi",
-    "faculty": "FTTM ITB",
-    "university": "Institut Teknologi Bandung",
-    "bio": "Tim peserta OlympiAR 2026 dalam kajian integrasi geologi, geokimia, dan evaluasi potensi pembentukan asam untuk perencanaan eksplorasi emas Ramba Joring.",
-    "image": "./assets/pp_ilham_team.jpg",
-    "badge": "ITB • OlympiAR 2026"
+    "image": "./assets/pp_ilham_team.jpg"
   },
   {
     "name": "Ima Alimatusyadiyah",
-    "role": "Tim Devilline",
-    "major": "Institut Teknologi Bandung",
-    "faculty": "OlympiAR 2026",
-    "university": "Institut Teknologi Bandung",
-    "bio": "Tim peserta OlympiAR 2026 dalam kajian integrasi geologi, geokimia, dan evaluasi potensi pembentukan asam untuk perencanaan eksplorasi emas Ramba Joring.",
     "image": "./assets/pp_ima.png",
-    "imageClassName": "pt-14",
-    "badge": "ITB • OlympiAR 2026"
+    "imageClassName": "pt-14"
   },
   {
     "name": "Dzaky Zahy Rabbani",
-    "role": "Tim Devilline",
-    "major": "Oseanografi",
-    "faculty": "FITB ITB",
-    "university": "Institut Teknologi Bandung",
-    "bio": "Tim peserta OlympiAR 2026 dalam kajian integrasi geologi, geokimia, dan evaluasi potensi pembentukan asam untuk perencanaan eksplorasi emas Ramba Joring.",
-    "image": "./assets/pp_dzaky.jpg",
-    "badge": "ITB • OlympiAR 2026"
+    "image": "./assets/pp_dzaky.jpg"
   }
 ];
 
@@ -91,31 +67,18 @@ export default function TeamPage() {
                   alt={member.name}
                   className={`w-full h-full object-cover object-top ${member.imageClassName ?? ''}`}
                 />
-                <div className="absolute top-4 right-4 max-w-[88%] px-3 py-1 rounded-full bg-white/95 border border-gray-200 text-[11px] font-mono font-semibold text-emerald-800 shadow-sm truncate">
-                  {member.badge}
-                </div>
               </div>
 
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-1">
-                    {member.role}
-                  </span>
-                  <h3 className="text-xl font-extrabold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-xs font-semibold text-amber-700 mb-3">
-                    {member.major} • {member.faculty}
-                  </p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
-                </div>
-
-                <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
-                  <span>{member.university}</span>
-                  <span className="font-mono font-bold text-emerald-700">DEVILLINE</span>
-                </div>
+              <div className="p-6">
+                <h3 className="text-xl font-extrabold text-gray-900">{member.name}</h3>
               </div>
             </div>
           ))}
         </div>
+        <footer className="border-t border-gray-200 pt-6 flex flex-wrap items-center justify-between gap-3 text-sm text-gray-600">
+          <span>Institut Teknologi Bandung</span>
+          <span className="font-mono font-bold text-emerald-700">DEVILLINE</span>
+        </footer>
       </main>
     </div>
   );

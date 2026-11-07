@@ -143,7 +143,7 @@ export default function LandingPage() {
         </div>
 
         {/* LAYER 3 (TOP): Centered Responsive Mobile Layout (< lg) | Top-Right Invisible Compartment on Laptop (lg:) */}
-        <div className="relative z-20 w-full max-w-[1480px] mx-auto px-4 sm:px-8 lg:px-14 pt-7 pb-36 sm:pt-9 sm:pb-36 lg:pt-10 lg:pb-16 flex flex-col items-center text-center lg:items-end lg:text-right">
+        <div className="relative z-20 w-full max-w-[1480px] mx-auto px-4 sm:px-8 lg:px-14 pt-7 pb-24 sm:pt-9 sm:pb-24 lg:pt-10 lg:pb-16 flex flex-col items-center text-center lg:items-end lg:text-right">
           {/* Invisible bounding wrapper */}
           <div className="w-full max-w-xl lg:max-w-[780px] flex flex-col items-center lg:items-end space-y-4">
             {/* Competition Pill Badge */}
